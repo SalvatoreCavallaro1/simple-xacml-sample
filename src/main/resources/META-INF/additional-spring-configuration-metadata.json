@@ -1,0 +1,19 @@
+{
+    "properties": [
+        {
+            "name": "pdp.url",
+            "type": "java.lang.String",
+            "description": "Description for pdp.url."
+        },
+        {
+            "name": "appcredentials.password",
+            "type": "java.lang.String",
+            "description": "Description for appcredentials.password."
+        },
+        {
+            "name": "appcredentials.username",
+            "type": "java.lang.String",
+            "description": "Description for appcredentials.username."
+        }
+    ]
+}
