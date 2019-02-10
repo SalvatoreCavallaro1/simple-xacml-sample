@@ -1,12 +1,16 @@
 # simple-xacml-sample
 
-Simple REST API in a Spring Boot application demonstrating the use of the [XACML 3.0 JSON Profile]( http://docs.oasis-open.org/xacml/xacml-json-http/v1.0/xacml-json-http-v1.0.html) in a Policy Enforcement Point (PEP) to evaluate access to a given resource.
+Simple Spring Boot application demonstrating the use of the [XACML 3.0 JSON Profile]( http://docs.oasis-open.org/xacml/xacml-json-http/v1.0/xacml-json-http-v1.0.html) in a Policy Enforcement Point (PEP) in a REST API to evaluate access to a given resource.
 
-The application contains a Sample RestController which uses the XACML 3.0 JSON Profile against a Policy Decision Point (PDP) to enforce access control - `SecuredSampleController` - returning a simple String if access should be permitted, and `403 Forbidden` otherwise. To be able to demonstrate the PEP example standalone, a Mock PDP (Policy Decision Point) is also included.
+The application contains a sample RestController(`SecuredSampleController`) which uses the XACML 3.0 JSON Profile against a Policy Decision Point (PDP) to enforce access control. It will return a simple String representing the resource if access should be permitted, and *403 Forbidden* otherwise. To be able to demonstrate the PEP example standalone, a Mock PDP (Policy Decision Point) is also included.
 
 ## How to test the sample
 
-Runs as a standard Spring Boot app, see https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-running-your-application.html for details.
+### Run
+
+Runs as a standard Spring Boot app, see [Spring Boot Documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-running-your-application.html) for details.
+
+### Use
 
 Point your browser to http://localhost:8080/swagger-ui.html to experiment using swagger. 
 
